@@ -6,3 +6,7 @@ For Images , we plan to use an MTCNN to crop out the face images from each image
 -For Videos , we plan to use an MTCNN , then an InceptionResnet (same as for images) , but we add a layer of LSTM this way we can capture the flicker of deepfake videos, as LSTMs are good for capturing features in continuos data (videos in this case)
 
 Our model is made more power efficient by careful and meticulous choice of neural network architectures , the RESIDUAL connections in the network solve the  vanishing gradient problem by using skip connections , the LSTMs also solve the vanishing gradient problem over long sequences making the training much more efficient , this way lesser epochs are required to train the AI model and hence lesser resources are required .Also the Inception modules (1x1 convolutions) help in cutting costs by reducing the amount of calculations required. This way we reduce the computational and power requirements of our deepfake detection model and hence make the model financially feasible
+
+
+https://github.com/Satvik-Gautam/Deep-Fake-Detection/assets/115337328/3d7b42ba-3957-48f1-a505-cdc72d187a34
+
